@@ -20,20 +20,18 @@ import Badges from "@/Common/Badge";
 import Button from "@/Common/Button";
 import Title from "@/common/Title";
 
-const VisitEyeCare = () => {
+const VisitEyeCare = ({ eyeCareData }) => {
   return (
     <section className={`${styles.mainContainer} container-fluid`}>
       <Title
-        title={"Visit"}
-        spantitle={"Naitrika Eye Care"}
+        title={eyeCareData?.title}
+        spantitle={eyeCareData?.titleBold}
         spantitlecolor={"#22d3ee"}
         subtitle={
-          "Conveniently located in the heart of Berhampur with easy access and ample parking"
+          eyeCareData?.description
         }
         subtitlecolor={"#ffff"}
       />
-      {/* <h5 className={styles.title}>Visit <span>Naitrika Eye Care</span></h5>
-            <p className={styles.description}>Conveniently located in the heart of Berhampur with easy access and ample parking</p> */}
       <div className={styles.container}>
         <div className={styles.cardContainer}>
           <div className={styles.card}>
@@ -41,10 +39,10 @@ const VisitEyeCare = () => {
               <MapPin size={24} />
             </div>
             <div className={styles.cardContent}>
-              <h5>Clinic Address</h5>
-              <p>1st Floor, Opp. Tahasildar Office,</p>
-              <p>Komapalli, Berhampur,</p>
-              <p>Odisha – 760004</p>
+              <h5>{eyeCareData?.address?.title}</h5>
+              <p>{eyeCareData?.address?.floor}</p>
+              <p>{eyeCareData?.address?.location}</p>
+              <p>{eyeCareData?.address?.state}</p>
             </div>
           </div>
           <div className={styles.card}>
@@ -52,9 +50,9 @@ const VisitEyeCare = () => {
               <Phone size={24} />
             </div>
             <div className={styles.cardContent}>
-              <h5>Contact Numbers</h5>
-              <p>📱 9810087878 (Primary)</p>
-              <p>📱 6372234590 (Secondary)</p>
+              <h5>{eyeCareData?.contact?.title}</h5>
+              <p>{eyeCareData?.contact?.primary}</p>
+              <p>{eyeCareData?.contact?.secondary}</p>
             </div>
           </div>
           <div className={styles.card}>
@@ -62,8 +60,8 @@ const VisitEyeCare = () => {
               <Mail size={24} />
             </div>
             <div className={styles.cardContent}>
-              <h5>Email</h5>
-              <p>naitrikaeyecare@gmail.com</p>
+              <h5>{eyeCareData?.email?.title}</h5>
+              <p>{eyeCareData?.email?.description}</p>
             </div>
           </div>
           <div className={styles.card}>
@@ -71,16 +69,16 @@ const VisitEyeCare = () => {
               <Clock size={24} />
             </div>
             <div className={styles.cardContent}>
-              <h5>Clinic Hours</h5>
-              <p>Monday - Saturday: 9:00 AM - 6:00 PM</p>
-              <p>Sunday: 10:00 AM - 2:00 PM</p>
-              <p>Emergency consultations available</p>
+              <h5>{eyeCareData?.hours?.title}</h5>
+              <p>{eyeCareData?.hours?.mondayToSaturday}</p>
+              <p>{eyeCareData?.hours?.sunday}</p>
+              <p>{eyeCareData?.hours?.emergencyConsultations}</p>
             </div>
           </div>
         </div>
         <div className={styles.location}>
           <iframe
-            src="https://www.google.com/maps?q=1st+Floor,+Opp.+Tahasildar+Office,+Komapalli,+Berhampur,+Odisha+760004&output=embed"
+            src={eyeCareData?.iframeSrc}
             allowfullscreen=""
             loading="lazy"
             className={styles.iframemap}
@@ -88,31 +86,35 @@ const VisitEyeCare = () => {
           ></iframe>
           <div className={styles.buttonGroup}>
             <Button
-              name="Get Directions"
+              name={eyeCareData?.button1}
               bgcolor={"#2563eb"}
               isbtn1={true}
               icon={"navigation"}
             />
             <Button
-              name="Parking Info"
+              name={eyeCareData?.button2}
               bgcolor="#16a34a"
               icon={"car"}
               isbtn1={true}
             />
           </div>
           <div className={styles.gettingFree}>
-            <h5>Getting Here</h5>
-            <p>🚗 Free parking available on-site</p>
-            <p>🚌 Well connected by public transport</p>
-            <p>🏥 Near Tahasildar Office (easy landmark)</p>
-            <p>♿ Wheelchair accessible entrance</p>
+            {
+              <>
+                <h5>{eyeCareData?.gettingHere?.title}</h5>
+                {eyeCareData?.gettingHere?.points?.map((item, index) => (
+                  <p key={index}>{item}</p>
+                ))
+                }
+              </>
+            }
           </div>
         </div>
       </div>
       <div className={styles.emergency}>
-        <h5>Emergency Eye Care</h5>
-        <p>For urgent eye emergencies, call us immediately</p>
-        <Button name="Emergency Hotline: 9810087878" bgcolor="#fff" />
+        <h5>{eyeCareData?.emergency?.title}</h5>
+        <p>{eyeCareData?.emergency?.description}</p>
+        <Button name={eyeCareData?.emergency?.buttontxt} bgcolor="#fff" />
       </div>
     </section>
   );

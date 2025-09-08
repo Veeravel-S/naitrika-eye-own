@@ -3,25 +3,25 @@ import styles from "./styles.module.css";
 import { DynamicIcon } from "lucide-react/dynamic";
 
 
-const SurgicalOptions = ({ data }) => {
+const ChooseLens = ({ data }) => {
     return (
-        <section className={`${styles.mainContainer} container-fluid`}>
-            <div className="container-lg py-5">
+        <section className={`${styles.visionsec}`}>
+            <div className="container-lg py-5 d-flex flex-column align-items-center">
                 <Title
                     title={
                         data?.title
                     }
                     spantitle={data?.titlebold}
                     titlecolor={"#000"}
-                    spantitlecolor={"#2563eb"}
+                    spantitlecolor={"#0891b2"}
                 />
 
-                <div className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-xxl-between justify-content-center h-auto gap-3`}>
+                <div className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-center h-auto gap-4`}>
                     {
-                        data?.points?.map((item, index) => (
-                            <div key={index} className={`${styles.itemContent} d-flex justify-content-start align-items-center gap-4`} style={{ backgroundColor: item.bgColor }}>
+                        data?.lensOptions?.map((item, index) => (
+                            <div key={index} className={`${styles.itemContent} d-flex flex-column text-center justify-content-start align-items-center gap-4 flex-fill`}>
                                 <div className="mt-1">
-                                    <DynamicIcon name={item?.icon} size={35} color={item?.iconColor} />
+                                    <DynamicIcon name={item?.icon} size={40} color={"#0891b2"} />
                                 </div>
                                 <div className="d-flex flex-column gap-2">
                                     <h4 className="fs-4">{item?.title}</h4>
@@ -31,9 +31,12 @@ const SurgicalOptions = ({ data }) => {
                         ))
                     }
                 </div>
+                <div className={styles.noteContainer}>
+                    <p className={styles.note}><span>Note: </span>{data?.note}</p>
+                </div>
             </div>
         </section>
     );
 };
 
-export default SurgicalOptions;
+export default ChooseLens;

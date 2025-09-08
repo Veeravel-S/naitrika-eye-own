@@ -436,8 +436,11 @@
   margin-bottom: 0;
 }
 
-.secureSlot p:nth-of-type(2) span {
+.secureSlot p:nth-of-type(2) a {
   color: rgb(234 88 12);
+}
+.secureSlot p:nth-of-type(2) a:hover{
+  text-decoration: underline;
 }
 
 .subCards {
@@ -447,23 +450,13 @@
   margin-top: 15px;
 }
 
-.subCard1,
-.subCard2 {
+.subCard {
   width: 100%;
   background-color: white;
   padding: 1.6rem;
+    border-radius: 1rem;
 }
 
-
-.subCard1 {
-  border-left: 4px solid rgb(248 113 113);
-  border-radius: 1rem;
-}
-
-.subCard2 {
-  border-left: 4px solid rgb(96 165 250);
-  border-radius: 1rem;
-}
 
 .subCard1 h5,
 .subCard2 h5 {
@@ -472,8 +465,7 @@
   margin-bottom: 0.5rem;
 }
 
-.subCard1 p,
-.subCard2 p {
+.subCard p{
   margin-bottom: 0px;
   color: rgb(75 85 99);
   font-size: 14px;

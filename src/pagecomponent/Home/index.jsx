@@ -8,13 +8,17 @@ import Testimonal from "@/component/Home/Testimonal";
 import Vision from "@/component/Home/Vision";
 import VisitEyeCare from "@/component/Home/VisitEyeCare";
 import { bannerData } from "@/constant/Home/banner";
+import { bestDeserveData } from "@/constant/Home/bestDeserve";
 import { CheckupData } from "@/constant/Home/checkup";
 import { consultationData } from "@/constant/Home/consultation";
 import { eyecareSpecialistData } from "@/constant/Home/eyecareSpecialist";
+import { limitedSlotsData } from "@/constant/Home/limitedSlot";
 import { TestimonalData } from "@/constant/Home/testimonal";
 import { VisionData } from "@/constant/Home/vision";
+import { eyeCareData } from "@/constant/Home/visitEyeCare";
 
 const HomePageComponent = () => {
+  console.log(limitedSlotsData)
   return (
     <>
       <Banner bannerData={bannerData} />
@@ -29,11 +33,11 @@ const HomePageComponent = () => {
 
       <Consultation consultationData={consultationData} />
 
-      <LimitedSlots />
+      <LimitedSlots limitedSlotsData={limitedSlotsData} />
 
-      <VisitEyeCare />
+      <VisitEyeCare eyeCareData={eyeCareData} />
 
-      <BestDeserve />
+      <BestDeserve bestDeserveData={bestDeserveData} />
     </>
   );
 };

@@ -20,7 +20,6 @@
   margin-top: 40px;
 }
 
-
 .cardContainer {
   display: flex;
   flex-direction: column;
@@ -114,8 +113,22 @@
 
 .buttonGroup button {
   width: 100% !important;
+  --tw-bg-opacity: 1;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+.buttonGroup button:nth-child(1):hover {
+  color: white;
+  --tw-bg-opacity: 1 !important;
+ background-color: rgb(29 78 216 / var(--tw-bg-opacity, 1)) !important;
 }
 
+.buttonGroup button:nth-child(2):hover {
+  color: white;
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1)) !important;
+}
 .gettingFree {
   background-color: rgb(22 78 99);
   padding: 1.5rem;
@@ -155,15 +168,19 @@
 }
 
 .emergency button {
-  color: #dc2626;
+  color: #dc2626 !important;
   padding: 15px 30px !important;
-
 }
+.emergency button:hover {
+color: #dc2626 !important;
+  --tw-bg-opacity: 1 !important;
+background-color: rgb(243 244 246  / var(--tw-bg-opacity, 1)) !important;
+}
+
 
 .emergency button h6 {
   font-size: 16px !important;
 }
-
 
 /* Responsive styles */
 @media (max-width: 1400px) {
@@ -208,7 +225,6 @@
     gap: 25px;
     margin-top: 30px;
   }
-
 
   .cardContainer {
     width: 55%;
@@ -255,7 +271,7 @@
     margin: 15px 0;
     flex-wrap: wrap;
   }
-  .buttonGroup button{
+  .buttonGroup button {
     width: 100%;
   }
 
@@ -275,7 +291,6 @@
     width: 100%;
     gap: 40px;
   }
-
 
   .location {
     width: 100%;

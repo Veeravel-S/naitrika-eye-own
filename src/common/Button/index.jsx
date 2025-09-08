@@ -13,11 +13,15 @@ const Button = ({
   prefixcolor,
   suffixicon,
   suffixcolor,
+  fontWeight,
+  href
 }) => {
+  const Wrapper = href ? "a" : "button";
   return (
-    <button
+    <Wrapper
+      href={href || undefined}
       style={{ backgroundColor: bgcolor }}
-      className={styles.commonbutton}
+      className={`${styles.commonbutton} d-inline-flex justify-content-center align-items-center gap-3 text-decoration-none`}
     >
       {isbtn1 ? (
         <div className="d-flex justify-content-center align-items-center gap-3">
@@ -37,10 +41,10 @@ const Button = ({
         </div>
       ) : (
         <div className="text-center">
-          <h6>{name}</h6>
+          <h6 style={{fontWeight: fontWeight}}>{name}</h6>
         </div>
       )}
-    </button>
+    </Wrapper>
   );
 };
 

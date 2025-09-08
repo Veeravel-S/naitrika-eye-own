@@ -1,23 +1,9 @@
 import {
   Award,
-  Badge,
-  Calendar,
-  Check,
   Clock,
-  Clock1,
-  GraduationCap,
-  GraduationCapIcon,
-  Heart,
-  Mail,
-  MapPin,
-  Phone,
   Shield,
-  Star,
-  Users,
-  Zap,
 } from "lucide-react";
 import styles from "./styles.module.css";
-import Badges from "@/Common/Badge";
 import Button from "@/Common/Button";
 
 const BestDeserve = () => {
@@ -77,12 +63,14 @@ const BestDeserve = () => {
           <h5>Prefer to speak with us directly?</h5>
           <div className={styles.buttonGroup}>
             <Button
+              href={"tel:+919810087878"}
               name="Call: 9810087878"
               isbtn1={true}
               icon={"phone"}
               bgcolor="#16a34a"
             />
             <Button
+              href={"mailto:naitrikaeyecare@gmail.com"}
               name="Email Us"
               icon={"arrow-right"}
               isbtn2={true}

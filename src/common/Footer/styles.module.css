@@ -49,6 +49,7 @@
         width: 100%;
         background-color: #fff;
         padding: 20px;
+        z-index: 10;
         border-top: 2px solid #2563eb;
     }
 

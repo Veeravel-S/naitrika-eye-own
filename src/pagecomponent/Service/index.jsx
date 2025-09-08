@@ -1,43 +1,35 @@
-import Banner from "@/component/Home/Banner";
 import BestDeserve from "@/component/Home/BestDeserve";
-import Checkup from "@/component/Home/Checkup";
-import Consultation from "@/component/Home/Consultation";
-import EyeCareSpecialist from "@/component/Home/EyeCareSpecialist";
 import LimitedSlots from "@/component/Home/LimitedSlots";
-import Testimonal from "@/component/Home/Testimonal";
-import Vision from "@/component/Home/Vision";
 import VisitEyeCare from "@/component/Home/VisitEyeCare";
+import ChooseLens from "@/component/Service/ChooseLens";
+import EyeCare from "@/component/Service/EyeCare";
+import ServiceBanner from "@/component/Service/serviceBanner";
+import ServiceSpecialist from "@/component/Service/serviceSpecialist";
 import SurgicalOptions from "@/component/Service/SurgicalOptions";
 import WHyPeopleChoose from "@/component/Service/WhyPeopleChoose";
-import { bannerData } from "@/constant/Home/banner";
-import { CheckupData } from "@/constant/Home/checkup";
-import { consultationData } from "@/constant/Home/consultation";
-import { eyecareSpecialistData } from "@/constant/Home/eyecareSpecialist";
-import { TestimonalData } from "@/constant/Home/testimonal";
-import { VisionData } from "@/constant/Home/vision";
 import { servicePageData } from "@/constant/Services";
+import BestDeserveService from "@/component/Service/bestDeserveService";
+import { limitedSlotsData } from "@/constant/Home/limitedSlot";
+import { eyeCareData } from "@/constant/Home/visitEyeCare";
+import { bestDeserveData } from "@/constant/Home/bestDeserve";
 
 const ServicePageComponent = () => {
     return (
         <>
-            {/* <Banner bannerData={bannerData} /> */}
+            <ServiceBanner data={servicePageData?.bannerData} />
 
-            {/* <Vision  /> */}
             <WHyPeopleChoose data={servicePageData?.whyPeopleChoose} />
-            <SurgicalOptions data={servicePageData?.surgicalOptions}/>
-            {/* <EyeCareSpecialist specialistData={eyecareSpecialistData} /> */}
+            <SurgicalOptions data={servicePageData?.surgicalOptions} />
+            <ChooseLens data={servicePageData?.ChooseLens} />
+            <ServiceSpecialist data={servicePageData?.serviceSpecialistData} />
+            <EyeCare data={servicePageData?.eyeCare} />
+            <BestDeserveService data={servicePageData?.clearVision} />
 
-            {/* <Checkup checkupData={CheckupData} />
+            <LimitedSlots limitedSlotsData={limitedSlotsData} />
 
-            <Testimonal testimonalData={TestimonalData} />
+            <VisitEyeCare eyeCareData={eyeCareData} />
 
-            <Consultation consultationData={consultationData} /> */}
-
-            {/* <LimitedSlots />
-
-            <VisitEyeCare />
-
-            <BestDeserve /> */}
+            <BestDeserve bestDeserveData={bestDeserveData} />
         </>
     );
 };

@@ -1,80 +1,58 @@
 import {
-  Award,
-  Badge,
   Calendar,
-  Check,
   Clock,
   Clock1,
-  GraduationCap,
-  GraduationCapIcon,
-  Heart,
-  Phone,
-  Star,
-  Users,
   Zap,
 } from "lucide-react";
 import styles from "./styles.module.css";
 import Badges from "@/Common/Badge";
 import Button from "@/Common/Button";
 import BadgeIcon from "@/common/BadgeIcon";
+import { DynamicIcon } from "lucide-react/dynamic";
 
-const LimitedSlots = () => {
+const LimitedSlots = ({ limitedSlotsData }) => {
+  console.log(limitedSlotsData);
   return (
     <section className={`${styles.mainContainer} container-fluid`}>
       <div className={styles.container}>
         <div className={styles.mainCard}>
           <div className={styles.slotAvailable}>
             <div className={styles.clockIcon}>
-              <BadgeIcon icon={"clock"} size={24}/>
+              <BadgeIcon icon={"clock"} size={24} />
             </div>
             <div className={styles.slotsContent}>
               <h2>
-                <span>Limited Slots Available</span> for FLACS Cataract Surgery
+                <span>{limitedSlotsData?.titlebold}</span> {limitedSlotsData?.title}
               </h2>
               <p>
-                Advanced Femtosecond Laser-Assisted Cataract Surgery allows full
-                recovery in as little as 1 day
+                {limitedSlotsData?.description}
               </p>
             </div>
           </div>
           <div className={styles.cardsContainer}>
-            <div className={styles.card}>
-              <Zap size={25} strokeWidth={2.25} />
-              <div className={styles.cardContent}>
-                <h6>No-Stitch Surgery</h6>
-                <p>Minimally invasive</p>
+            {limitedSlotsData?.features?.map((item,index) => (
+              <div key={index} className={styles.card}>
+                <DynamicIcon name={item?.icon} size={25} strokeWidth={2.25} />
+                <div className={styles.cardContent}>
+                  <h6>{item?.title}</h6>
+                  <p>{item?.subtitle}</p>
+                </div>
               </div>
-            </div>
-            <div className={styles.card}>
-              <Clock size={24} strokeWidth={2.25} />
-              <div className={styles.cardContent}>
-                <h6>Quick Recovery</h6>
-                <p>Resume normal activities</p>
-              </div>
-            </div>
-            <div className={styles.card}>
-              <Calendar size={25} strokeWidth={2.25} />
-              <div className={styles.cardContent}>
-                <h6>Same-Day Discharge</h6>
-                <p>Go home the same day</p>
-              </div>
-            </div>
+            ))}
           </div>
           <div className={styles.onlySlots}>
             <div className={`${styles.slotsTitle} d-flex  align-items-center`}>
               <div className={styles.circle}></div>
-              <h5 className="m-0">Only 8 slots remaining this month</h5>
+              <h5 className="m-0">{limitedSlotsData?.availability?.text}</h5>
             </div>
             <p>
-              Due to high demand for our advanced FLACS technology, appointment
-              slots are filling quickly. Book now to secure your preferred date
-              and avoid waiting.
+              {limitedSlotsData?.note}
             </p>
           </div>
           <div className={styles.secureSlot}>
             <Button
               icon={"arrow-right"}
-              name="Secure Your Slot Now"
+              name={limitedSlotsData?.button?.text}
               isbtn2={true}
               bgcolor={"#ea580c"}
             ></Button>
@@ -85,30 +63,25 @@ const LimitedSlots = () => {
                   strokeWidth={2.25}
                   style={{ paddingRight: "3px" }}
                 />{" "}
-                Fast booking:{" "}
+                {limitedSlotsData?.fastBooking?.title}
               </span>{" "}
-              Get confirmation within 2 hours
+               {limitedSlotsData?.fastBooking?.description}
             </p>
             <p>
-              call <span>9810087878 </span>for immediate assistance
+              Call <a href={limitedSlotsData?.fastBooking?.href}>{limitedSlotsData?.fastBooking?.contact} </a>for immediate assistance
             </p>
           </div>
         </div>
         <div className={styles.subCards}>
-          <div className={styles.subCard1}>
-            <h5>Don't Wait - Vision Problems Worsen</h5>
+          {limitedSlotsData?.highlights?.map((item,index)=>(
+             <div key={index} className={styles.subCard} style={{borderLeft:`4px solid ${item?.borderColor}`}}>
+            <h5>{item?.title}</h5>
             <p>
-              Delaying treatment can lead to complications. Early intervention
-              ensures better outcomes.
+             {item?.detail}
             </p>
           </div>
-          <div className={styles.subCard2}>
-            <h5>Weekend & Evening Slots Available</h5>
-            <p>
-              Flexible scheduling to accommodate your busy lifestyle. Book the
-              time that works for you.
-            </p>
-          </div>
+          ))
+          }
         </div>
       </div>
     </section>

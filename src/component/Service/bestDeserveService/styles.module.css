@@ -1,5 +1,5 @@
 .mainContainer {
-  background: linear-gradient(to right, #1e3a8a, #1e40af, #155e75);
+  background: linear-gradient(to right, #1e3a8a, #155e75);
   padding: 80px 10px;
   color: #fff;
   display: flex;
@@ -89,7 +89,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: start;
-  margin: 40px;
+  margin: 20px;
   width: 100%;
 }
 
@@ -102,104 +102,6 @@
   transition: all 0.2s ease-in-out;
 }
 
-.scheduleDetails {
-  margin-top: 15px;
-  color: rgb(191 219 254);
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-  display: flex;
-  align-items: start;
-  justify-content: start;
-  gap: 5px;
-}
-
-.preferSpeak {
-  width: 75%;
-}
-
-.buttonGroup {
-  width: 100%;
-  display: flex;
-  gap: 15px;
-  margin: 20px 10px 0px;
-}
-
-.buttonGroup a {
-  flex: 1;
-  min-width: 0;
-  --tw-bg-opacity: 1;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
-}
-.buttonGroup a:nth-child(1):hover {
-  color: white;
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(
-    21 128 61 / var(--tw-bg-opacity, 1)
-  ) !important; 
-}
-
-.buttonGroup a:nth-child(2):hover {
-  color: white;
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(110 20 180 / var(--tw-bg-opacity, 1)) !important; 
-}
-
-.timeOffer {
-  background-color: #dc262633;
-  border: 1px solid #ef44444d;
-  border-radius: 0.5rem;
-  margin-top: 2.5rem;
-  padding: 1.5rem;
-}
-
-.timeOffer button:hover {
-  background-color: #dc2626 !important;
-  color: white !important;
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-}
-
-.timeOffer h6 {
-  color: rgb(252 165 165);
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.timeOffer p {
-  margin-bottom: 0;
-}
-
-.timeOffer p span {
-  font-weight: 700;
-}
-
-.circle {
-  display: inline-block;
-  background-color: rgb(249 115 22);
-  width: 0.75rem;
-  height: 0.75rem;
-  border-radius: 50%;
-  margin-right: 5px;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% {
-    transform: scale(1);
-    opacity: 1;
-  }
-
-  50% {
-    transform: scale(1.2);
-    opacity: 0.5;
-  }
-}
-
-/* Responsive styles */
 @media (max-width: 1400px) {
   .container {
     width: 80%;
@@ -225,10 +127,6 @@
 
   .description {
     font-size: 1.3rem;
-  }
-
-  .preferSpeak {
-    width: 85%;
   }
 }
 
@@ -265,23 +163,6 @@
   .schedule {
     margin: 30px;
   }
-
-  .scheduleDetails {
-    font-size: 1rem;
-  }
-
-  .preferSpeak {
-    width: 85%;
-  }
-
-  .buttonGroup {
-    margin: 15px 10px 0px;
-  }
-
-  .timeOffer {
-    padding: 1.25rem;
-    margin-top: 2rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -317,31 +198,6 @@
   .schedule button {
     width: 80%;
   }
-  .scheduleDetails {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 8px;
-  }
-
-  .preferSpeak {
-    width: 100%;
-  }
-
-  .buttonGroup {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 25px 0 0;
-  }
-
-  .buttonGroup button {
-    width: 85%;
-  }
-
-  .timeOffer {
-    padding: 1.25rem;
-  }
 }
 
 @media (max-width: 576px) {
@@ -376,27 +232,6 @@
 
   .schedule button {
     width: 90%;
-    font-size: 0.9rem;
-  }
-
-  .scheduleDetails p {
-    font-size: 0.9rem;
-  }
-
-  .preferSpeak h5 {
-    font-size: 1rem;
-  }
-
-  .timeOffer {
-    padding: 1rem;
-    margin-top: 1.5rem;
-  }
-
-  .timeOffer h6 {
-    font-size: 0.9rem;
-  }
-
-  .timeOffer p {
     font-size: 0.9rem;
   }
 }

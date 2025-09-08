@@ -7,7 +7,7 @@ import { DynamicIcon } from "lucide-react/dynamic";
 
 const WHyPeopleChoose = ({ data }) => {
   return (
-    <section className={styles.visionsec}>
+    <section className={`${styles.visionsec} container-lg py-5`}>
       <div className="container-lg">
         <Title
           title={
@@ -18,7 +18,7 @@ const WHyPeopleChoose = ({ data }) => {
           spantitlecolor={"#2563eb"}
         />
 
-        <div className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-xxl-between align-items-stretch justify-content-center h-auto  gap-4 flex-wrap`}>
+        <div className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-center justify-content-center h-auto gap-4`}>
         {
             data?.points?.map((item)=>(
                 <div className={`${styles.itemContent} d-flex justify-content-start align-items-start gap-3`}>

@@ -9,9 +9,11 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 80px 10px 0;
+  padding: 80px 10px 80px;
 }
-
+.bannerContainer {
+  width: 100%;
+}
 .bannerTag {
   font-weight: 500;
   font-size: 0.9rem;
@@ -26,8 +28,6 @@
   gap: 7px;
   justify-content: center;
   border-radius: 50px;
-  background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1));
-  color: rgb(30 64 175 / var(--tw-text-opacity, 1));
 }
 
 .bannerTag p {
@@ -91,6 +91,7 @@
 
 .buttonGroup {
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
   width: 100%;
   margin-bottom: 20px;
@@ -119,7 +120,20 @@
   color: rgb(37 99 235);
   background-color: transparent;
 }
-
+.button3 {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  padding-top: 1rem;
+  font-size: 1.125rem;
+  padding-bottom: 1rem;
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+border: 2px solid rgb(22 163 74);
+  color: rgb(22 163 74);
+  background-color: transparent;
+}
 .buttonGroup button {
   display: flex;
   gap: 10px;
@@ -131,7 +145,15 @@
   color: white;
   background-color: rgb(37 99 235);
 }
-
+.button3:hover {
+  color: white;
+  background-color: rgb(22 163 74);
+}
+.note{
+  font-size: .75rem;
+  line-height: 1rem;
+  color: rgb(107 114 128 );
+}
 .bannerDetails {
   display: flex;
   gap: 10px;
@@ -352,7 +374,7 @@
   .container {
     width: 100%;
     flex-direction: column;
-    padding: 40px 2px 0;
+    padding: 70px 2px ;
     justify-content: end;
   }
 
@@ -412,7 +434,7 @@
     width: 90%;
     padding: 30px 20px;
     margin-top: -160px;
-    z-index: 20;
+    z-index: 6;
   }
 
   .detailItem {
@@ -428,7 +450,7 @@
 
 @media (max-width: 576px) {
   .container {
-    padding: 30px 2px 0;
+    padding: 60px 2px 50px;
   }
 
   .title {
@@ -456,7 +478,7 @@
     width: 95%;
     left: 10px;
     bottom: 0;
-     margin-top: -165px;
+    margin-top: -165px;
     padding: 25px 15px;
   }
 

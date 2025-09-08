@@ -17,14 +17,14 @@ const Title = ({
       >
         <h2 style={{ color: titlecolor }}>
           <span style={{ color: spantitlecolor }}>{spantitle}</span>
-          {`${title} `}
+          {`${title ? title : ""} `}
         </h2>
       </div>
         ):<div
         className={`text-center d-flex justify-content-center ${styles.title}`}
       >
         <h2 style={{ color: titlecolor }}>
-          {`${title} `}
+          {`${title ? title : ""} `}
           <span style={{ color: spantitlecolor }}>{spantitle}</span>
         </h2>
       </div>}
