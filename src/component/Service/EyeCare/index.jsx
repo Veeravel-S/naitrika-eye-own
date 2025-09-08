@@ -1,16 +1,3 @@
-import {
-    Award,
-    Badge,
-    Calendar,
-    Check,
-    Clock,
-    Mail,
-    MapPin,
-    Phone,
-    Star,
-    Users,
-    Zap,
-} from "lucide-react";
 import styles from "./styles.module.css";
 import Badges from "@/Common/Badge";
 import Button from "@/Common/Button";

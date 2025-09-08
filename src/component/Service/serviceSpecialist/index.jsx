@@ -1,7 +1,5 @@
 import { Award, Badge, Calendar, Check, GraduationCap, GraduationCapIcon, Heart, Phone, Star, Users } from "lucide-react";
 import styles from "./styles.module.css"
-import Badges from "@/Common/Badge";
-import BadgeIcon from "@/common/BadgeIcon";
 
 const ServiceSpecialist = ({ data }) => {
     return (

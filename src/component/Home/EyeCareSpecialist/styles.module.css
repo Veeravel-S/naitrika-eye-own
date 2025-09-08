@@ -10,6 +10,8 @@
   align-items: start;
   height: 100%;
   padding: 90px 10px 80px;
+    max-width: 1400px;
+    margin: 0 auto;
   gap: 20px;
 }
 .mainImageContainer {
