@@ -77,7 +77,7 @@
 }
 
 .cardContainer .card:nth-of-type(2) .icon {
-  background-color: #16a34a;
+  background-color: #CF5B00;
 }
 
 .cardContainer .card:nth-of-type(3) .icon {
@@ -85,11 +85,11 @@
 }
 
 .cardContainer .card:nth-of-type(4) .icon {
-  background-color: #ea580c;
+  background-color: #04A7DE;
 }
 
 .cardContainer .card:nth-of-type(2) p {
-  color: rgb(74 222 128);
+  color: #CF5B00;
   opacity: 1;
   font-weight: 600;
 }
@@ -101,7 +101,7 @@
 }
 
 .cardContainer .card:nth-of-type(4) p:last-child {
-  color: rgb(251 146 60);
+  color: #04A7DE;
   opacity: 1;
   font-size: 14px;
 }

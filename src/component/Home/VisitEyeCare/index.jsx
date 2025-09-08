@@ -47,7 +47,7 @@ const VisitEyeCare = ({ eyeCareData }) => {
           </div>
           <div className={styles.card}>
             <div className={styles.icon}>
-              <Phone size={24} />
+              <Phone size={24}  />
             </div>
             <div className={styles.cardContent}>
               <h5>{eyeCareData?.contact?.title}</h5>
@@ -93,7 +93,7 @@ const VisitEyeCare = ({ eyeCareData }) => {
             />
             <Button
               name={eyeCareData?.button2}
-              bgcolor="#16a34a"
+              bgcolor="#CF5B00"
               icon={"car"}
               isbtn1={true}
             />

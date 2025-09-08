@@ -1,5 +1,5 @@
 .checkupsec {
-    background-color: #eefaff;
+    background-color: #eff6ff;
     padding: 80px 0px;
 }
 
@@ -15,8 +15,8 @@
 }
 
 .checkupcard h3 {
+    background-color: #beefff;
     color: #2563eb;
-    background-color: rgb(219 234 254);
 }
 
 .checkupcard h4 {
@@ -42,40 +42,45 @@
 .greenpoint {
     width: 8px;
     height: 8px;
-    background-color: rgb(34 197 94);
+    background-color: #CF5B00;
     border-radius: 50px;
 }
 
-.checkupcard button  , .checkupcard a{
+.checkupcard button,
+.checkupcard a {
     width: 100%;
     padding: 14px;
     margin-top: 25px;
 }
 
 
-.checkupcard button:hover  , .checkupcard a:hover{
+.checkupcard button:hover,
+.checkupcard a:hover {
     width: 100%;
     padding: 14px;
     margin-top: 25px;
 }
 
-.checkupcard button h6 , .checkupcard a h6 {
+.checkupcard button h6,
+.checkupcard a h6 {
     font-weight: 400;
     font-size: 16px;
     color: #2563eb;
 }
 
-.checkupcard button:hover {
+.checkupcard button:hover,
+.checkupcard a:hover {
     background-color: #2563eb !important;
     padding: 14px;
 }
 
-.checkupcard button:hover h6 {
+.checkupcard button:hover h6,
+.checkupcard a:hover h6 {
     color: #fff !important;
 }
 
 .checkupcard:hover h3 {
-    background-color: #2563eb;
+    background-color: #78d7f7;
     color: #fff;
 }
 

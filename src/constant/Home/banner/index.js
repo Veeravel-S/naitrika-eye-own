@@ -1,8 +1,10 @@
 export const bannerData = {
   id: 1,
   topChips: ["AIIMS New Delhi", "Pediatric Ophthalmology"],
-  titleBold: "Advanced Eye Care",
-  title: " for Children & Adults in Berhampur",
+  titleBold: "Advanced ",
+  titleBold2: "Eye Care for Children & Adults ",
+  titleBold3: "in Berhampur",
+
   description1: "Led by ",
   description1Bold:
     "Dr. Aswini Kumar Behera. AIIMS New Delhi. Trained pediatric ophthalmologist.",

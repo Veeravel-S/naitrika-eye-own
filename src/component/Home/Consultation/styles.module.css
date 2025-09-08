@@ -8,7 +8,7 @@
 .greenpoint {
     width: 8px;
     height: 8px;
-    background-color: rgb(34 197 94);
+    background-color: #CF5B00;
     border-radius: 50px;
 }
 
@@ -20,7 +20,7 @@
 }
 
 .consultcard h3 {
-    background-color: rgb(219 234 254);
+    background-color: #beefff;
     color: #2563eb;
 }
 

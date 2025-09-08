@@ -8,7 +8,7 @@ const Faq = ({ faqlist }) => {
         <Title
           title={"Frequently Asked"}
           spantitle={"Questions"}
-          spantitlecolor={"#3b73ed"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="d-flex justify-content-center">

@@ -22,7 +22,7 @@
 .mainCard {
   padding: 3rem;
   background-color: #fff;
-  border-left: 4px solid rgb(249 115 22);
+  border-left: 4px solid #CF5B00;
   border-radius: 1rem;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
@@ -42,7 +42,7 @@
 }
 
 .slotAvailable h2 span {
-  color: rgb(249 115 22);
+  color: #CF5B00;
 }
 
 .slotAvailable p {

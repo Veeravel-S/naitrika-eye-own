@@ -8,7 +8,7 @@ const ClearVision = ({ clearPathvisiondata }) => {
         <Title
           title={clearPathvisiondata?.title}
           spantitle={clearPathvisiondata?.titlebold}
-          spantitlecolor={"#0891b2"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="my-md-5 my-4 d-flex  justify-content-center  gap-4 flex-wrap">

@@ -56,7 +56,7 @@ const BestDeserve = ({ bestDeserveData }) => {
               name={bestDeserveData?.contactPrompt?.button1}
               isbtn1={true}
               icon={"phone"}
-              bgcolor="#16a34a"
+              bgcolor="#CF5B00"
             />
             <Button
               href={bestDeserveData?.contactPrompt?.button2href}

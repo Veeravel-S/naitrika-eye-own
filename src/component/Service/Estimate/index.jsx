@@ -8,7 +8,7 @@ const Estimate = () => {
         <Title
           title={"Clear,"}
           spantitle={"Written Estimate"}
-          spantitlecolor={"#16a34a"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="d-flex justify-content-center mt-5">

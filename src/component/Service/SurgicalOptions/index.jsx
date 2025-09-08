@@ -13,7 +13,7 @@ const SurgicalOptions = ({ data }) => {
                     }
                     spantitle={data?.titlebold}
                     titlecolor={"#000"}
-                    spantitlecolor={"#2563eb"}
+                    spantitlecolor={"#04A7DE"}
                 />
 
                 <div className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-xxl-between justify-content-center h-auto gap-3`}>

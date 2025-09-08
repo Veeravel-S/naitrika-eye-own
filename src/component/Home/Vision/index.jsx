@@ -12,7 +12,7 @@ const Vision = ({ visionData }) => {
           istitle2={true}
           spantitle={visionData?.titlebold}
           titlecolor={"#000"}
-          spantitlecolor={"#2563eb"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="visiontype my-md-5 my-4 d-flex justify-content-xxl-between align-items-stretch justify-content-center h-auto  gap-4 flex-wrap">
@@ -45,7 +45,7 @@ const Vision = ({ visionData }) => {
               name={visionData?.advancecare?.btn}
               icon={visionData?.advancecare?.btnicon}
               iconcolor={"#fff"}
-              bgcolor={"#16a34a"}
+              bgcolor={"#CF5B00"}
               isbtn2={true}
             />
           </div>

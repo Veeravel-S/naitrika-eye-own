@@ -10,7 +10,7 @@ const Consultation = ({ consultationData }) => {
         <Title
           title={consultationData?.title}
           spantitle={consultationData?.titlebold}
-          spantitlecolor={"#2563eb"}
+          spantitlecolor={"#04A7DE"}
           subtitle={consultationData?.subtitle}
         />
 

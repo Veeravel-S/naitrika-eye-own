@@ -11,7 +11,7 @@
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     width: 470px;
-}   
+}
 
 .visioncard:hover {
     transform: translateY(-15px);
@@ -19,8 +19,8 @@
 }
 
 .visioncard h3 {
-    background-color: #fee2e2;
-    color: rgb(220 38 38);
+    background-color: #f1dbc9;
+    color: #CF5B00;
 }
 
 .visioncard h4 {
@@ -50,13 +50,13 @@
 }
 
 .advancecare span {
-    color: #16a34a !important;
+    color: #CF5B00 !important;
 }
 
 .advancecare button:hover {
     transform: scale(1.05);
     transition: all 0.2s ease-in-out;
-    background-color: #0b7a34 !important;
+    background-color: #CF5B00 !important;
 
 }
 
@@ -108,19 +108,19 @@
 
 @media (width < 768px) {
 
-    .visioncard{
+    .visioncard {
         width: 100%;
     }
 
-    .visionsec{
+    .visionsec {
         padding: 60px 0px;
     }
-    
+
 }
 
 @media (width < 576px) {
-    .advancecare{
+    .advancecare {
         padding: 30px;
     }
-    
+
 }

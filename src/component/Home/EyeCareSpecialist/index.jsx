@@ -22,7 +22,7 @@ const EyeCareSpecialist = ({ specialistData }) => {
                         {specialistData?.featureTiles?.map((item) => (
                             <div className={styles.detailItem}>
                                 <div className={styles.itemIcon}>
-                                      <BadgeIcon icon={item?.icon} size={25} color="#3b73ed" />
+                                      <BadgeIcon icon={item?.icon} size={25} color="#2563eb" />
                                 </div>
                                 <div className={styles.itemContent}>
                                     <h5>{item?.title}</h5>

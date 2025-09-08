@@ -14,7 +14,7 @@ const Checkup = ({ checkupData }) => {
           subtitle={
             "From routine check-ups to complex surgeries, we provide comprehensive eye care services with the latest technology and expert care."
           }
-          spantitlecolor={"rgb(37 99 235)"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="my-md-5 my-4">

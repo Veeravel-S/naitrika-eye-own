@@ -13,7 +13,8 @@ const Banner = ({ bannerData }) => {
           </div>
           <h2 className={styles.title}>
             <span className={styles.span2}>{bannerData?.titleBold}</span>
-            {bannerData?.title}
+            <span className={styles.span3}>{bannerData?.titleBold2}</span> 
+            <span className={styles.span4}>{bannerData?.titleBold3}</span>
           </h2>
           <p className={styles.description}>
             {bannerData?.description1} <span>{bannerData?.description1Bold}</span> {bannerData?.description2}

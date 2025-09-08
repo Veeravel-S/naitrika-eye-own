@@ -24,7 +24,7 @@ const Testimonal = ({ testimonalData }) => {
           subtitle={
             "Hear from our patients who have experienced life-changing vision care at Naitrika Eye Care."
           }
-          spantitlecolor={"#16a34a"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="d-flex justify-content-center my-md-5 my-3 ">
@@ -102,7 +102,7 @@ const Testimonal = ({ testimonalData }) => {
         </div>
 
         <div className={`text-center pt-md-3 pt-5 ${styles.stories}`}>
-          <Button name={"Read More Success Stories"} bgcolor={"#16a34a"} />
+          <Button name={"Read More Success Stories"} bgcolor={"#CF5B00"} />
           <p className="mt-3">
             Join thousands of satisfied patients who trust Naitrika Eye Care
           </p>

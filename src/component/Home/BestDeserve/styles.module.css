@@ -1,5 +1,5 @@
 .mainContainer {
-  background: linear-gradient(to right, #1e3a8a, #1e40af, #155e75);
+  background: linear-gradient(to right, #04A7DE, #1e40af, #155e75);
   padding: 80px 10px;
   color: #fff;
   display: flex;
@@ -14,8 +14,8 @@
   align-items: center;
   justify-content: start;
   text-align: center;
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .title {
@@ -59,12 +59,14 @@
   transition-duration: 0.2s;
   cursor: pointer;
 }
+
 .cardWrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
 }
+
 .card:hover {
   transform: scale(1.02);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
@@ -99,6 +101,7 @@
   color: black !important;
   transition: all 0.2s ease-in-out;
 }
+
 .schedule button:hover {
   transform: scale(1.05);
   transition: all 0.2s ease-in-out;
@@ -134,18 +137,17 @@
   color: rgb(255 255 255 / var(--tw-text-opacity, 1)) !important;
   transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) !important;
 }
+
 .buttonGroup a:nth-child(1):hover {
   color: white;
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(
-    21 128 61 / var(--tw-bg-opacity, 1)
-  ) !important; 
+  background-color: rgb(21 128 61 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .buttonGroup a:nth-child(2):hover {
   color: white;
   --tw-bg-opacity: 1 !important;
-  background-color: rgb(110 20 180 / var(--tw-bg-opacity, 1)) !important; 
+  background-color: rgb(110 20 180 / var(--tw-bg-opacity, 1)) !important;
 }
 
 .timeOffer {
@@ -189,6 +191,7 @@
 }
 
 @keyframes pulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -319,6 +322,7 @@
   .schedule button {
     width: 80%;
   }
+
   .scheduleDetails {
     flex-direction: column;
     align-items: center;

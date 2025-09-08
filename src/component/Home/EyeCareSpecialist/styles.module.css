@@ -10,21 +10,24 @@
   align-items: start;
   height: 100%;
   padding: 90px 10px 80px;
-    max-width: 1400px;
-    margin: 0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
   gap: 20px;
 }
+
 .mainImageContainer {
   width: 50%;
 }
+
 .containerImage {
   width: 95%;
   position: relative;
   box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
   border-radius: 1rem;
-   overflow: hidden;
-   height: 500px;
+  overflow: hidden;
+  height: 500px;
 }
+
 .containerImage img {
   width: 100%;
   height: 100%;
@@ -33,6 +36,7 @@
   transform: scale(1.1);
   object-position: center;
 }
+
 .tag {
   position: absolute;
   padding: 0.5rem 1rem;
@@ -50,189 +54,196 @@
 }
 
 .title {
-font-size: 2.25rem;
-    line-height: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
 }
 
 .title span {
-  color: rgb(37 99 235);
+  color: #04A7DE;
 }
 
-.description{
-    font-size: 1.125rem;
-    line-height: 1.625;
-    color: rgb(75 85 99 );
-    margin-top: 20px;
+.description {
+  font-size: 1.125rem;
+  line-height: 1.625;
+  color: rgb(75 85 99);
+  margin-top: 20px;
 }
 
 .bannerDetails {
   display: flex;
- align-items: start;
- justify-content: center;
- flex-wrap: wrap;
+  align-items: start;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 0rem;
   margin-top: 2rem;
   height: auto;
 }
 
 .detailItem {
-    width: 50%;
+  width: 50%;
   display: flex;
   align-items: start;
   justify-content: start;
-  gap: 0.9rem; 
+  gap: 0.9rem;
   padding: 0.4rem;
 }
-.itemIcon{
-    background-color: rgb(219 234 254);
-    padding: 14px 14px;
-    border-radius: 10px;
-    
+
+.itemIcon {
+  background-color: #beefff;
+  padding: 14px 14px;
+  border-radius: 10px;
+
 }
+
 .itemIcon img {
   width: 40px;
   height: 40px;
   object-fit: contain;
 }
-.itemIcon h3{
-    width: auto;
-    height: fit-content;
-    display: flex;
-    justify-content: center;
-    padding: 0px 0px;
-    border-radius: 10px;
-    margin-bottom: 0;
+
+.itemIcon h3 {
+  width: auto;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  padding: 0px 0px;
+  border-radius: 10px;
+  margin-bottom: 0;
 }
-.itemContent h5{
-    font-weight: 600;
-    font-size: 16px;
-     width: 80%;
-    margin-bottom: 8px;
+
+.itemContent h5 {
+  font-weight: 600;
+  font-size: 16px;
+  width: 80%;
+  margin-bottom: 8px;
 
 }
 
-.itemContent p{
-    color: rgb(75 85 99); 
-     width: 95%;
-     font-size: 0.875rem;
+.itemContent p {
+  color: rgb(75 85 99);
+  width: 95%;
+  font-size: 0.875rem;
 }
 
-.badgeContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-top: 25px;
+.badgeContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 25px;
 }
 
 @media (max-width: 1400px) {
   .container {
     padding: 70px 10px 80px;
   }
-  
+
   .containerImage {
     height: 650px;
   }
-  
+
   .title {
     font-size: 2.1rem;
   }
-  
+
   .description {
     font-size: 1.05rem;
   }
 }
 
 @media (max-width: 1200px) {
+
   /* .mainContainer{
     height: 950px;
   } */
   .container {
     padding: 65px 10px 80px;
   }
-  
+
   .containerImage {
     height: 660px;
   }
-  
+
   .title {
     font-size: 2rem;
   }
-  
+
   .description {
     font-size: 1rem;
   }
-  
+
   .itemContent h5 {
     font-size: 15px;
   }
-  
+
   .itemContent p {
     font-size: 0.85rem;
   }
-  .badgeContainer{
+
+  .badgeContainer {
     gap: 10px;
   }
 }
 
 @media (max-width: 992px) {
-  
+
   .container {
     padding: 60px 10px 70px;
     gap: 15px;
     flex-direction: column;
   }
-  
+
   .mainImageContainer {
     width: 100%;
   }
-  
+
   .containerImage {
     height: 680px;
     width: 100%;
   }
-  
+
   .containerContent {
     width: 100%;
     text-align: left;
   }
-  
+
   .title {
     margin-top: 20px;
     font-size: 2rem;
   }
-  
+
   .description {
     font-size: 1rem;
     margin-top: 15px;
     width: 95%;
   }
-  
+
   .bannerDetails {
     margin-top: 1.5rem;
   }
-  
+
   .detailItem {
     padding: 0.3rem;
   }
-  
+
   .itemIcon {
     padding: 10px;
   }
-  
+
   .itemContent h5 {
     font-size: 15px;
   }
-  
+
   .itemContent p {
     font-size: 0.8rem;
   }
-  
+
   .badgeContainer {
     margin-top: 20px;
   }
-  .containerImage img{
+
+  .containerImage img {
     object-position: center;
   }
 }
@@ -242,45 +253,45 @@ font-size: 2.25rem;
     min-height: auto;
     padding-bottom: 40px;
   }
-  
+
   .container {
     flex-direction: column;
     padding: 40px 0px;
     text-align: start;
   }
-  
+
   .mainImageContainer {
     width: 100%;
     margin-bottom: 10px;
   }
-  
+
   .containerImage {
     width: 100%;
     height: 500px;
   }
-  
+
   .containerContent {
     width: 100%;
     text-align: start;
   }
-  
+
   .title {
     font-size: 1.75rem;
     text-align: start;
   }
-  
+
   .description {
     text-align: start;
     width: 100%;
     font-size: 1.2rem;
   }
-  
+
   .bannerDetails {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-  
+
   .detailItem {
     width: 48%;
     justify-content: center;
@@ -288,13 +299,13 @@ font-size: 2.25rem;
     margin-bottom: 0px;
     padding: 0;
   }
-  
+
   .itemContent h5,
   .itemContent p {
     width: 100%;
     text-align: left;
   }
-  
+
   .badgeContainer {
     flex-wrap: wrap;
     justify-content: start;
@@ -306,46 +317,46 @@ font-size: 2.25rem;
   .container {
     padding: 30px 0px;
   }
-  
+
   .containerImage {
     height: 400px;
   }
-  
+
   .tag {
     padding: 0.4rem 0.8rem;
     font-size: 12px;
   }
-  
+
   .title {
     font-size: 1.5rem;
     margin-top: 15px;
   }
-  
+
   .description {
     font-size: 1rem;
     margin-top: 10px;
   }
-  
+
   .bannerDetails {
     margin-top: 1rem;
   }
-  
+
   .detailItem {
     margin-bottom: 12px;
   }
-  
+
   .itemIcon {
     padding: 8px;
   }
-  
+
   .itemContent h5 {
     font-size: 14px;
   }
-  
+
   .itemContent p {
     font-size: 0.75rem;
   }
-  
+
   .badgeContainer {
     margin-top: 15px;
     gap: 3px;

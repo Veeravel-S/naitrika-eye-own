@@ -9,7 +9,7 @@ const CandidateSurgery = ({ surgerypoints }) => {
         <Title
           title={"Am I a"}
           spantitle={"Candidate for Surgery?"}
-          spantitlecolor={"#3b73ed"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="d-flex justify-content-center mt-4">
@@ -19,7 +19,7 @@ const CandidateSurgery = ({ surgerypoints }) => {
                 className={`${styles.pointcard} d-flex gap-3 align-items-center my-4 commonshadow`}
                 key={i}
               >
-                <DynamicIcon name="circle-check-big" color="#16a34a" />
+                <DynamicIcon name="circle-check-big" color="#CF5B00" />
                 <p className="m-0">{data?.desc}</p>
               </div>
             ))}

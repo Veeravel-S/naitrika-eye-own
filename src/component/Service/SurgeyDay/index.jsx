@@ -8,7 +8,7 @@ const SurgeryDay = ({ surgery_list, do_list, dont_do_list }) => {
         <Title
           title={"Your Surgery Day — "}
           spantitle={"Step by Step"}
-          spantitlecolor={"#3b73ed"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className=" surgerycard mt-4">

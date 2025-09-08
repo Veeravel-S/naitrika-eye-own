@@ -10,27 +10,31 @@ const WHyPeopleChoose = ({ data }) => {
     <section className={`${styles.visionsec} container-lg py-5`}>
       <div className="container-lg">
         <Title
-          title={
-            data?.title
-          }
+          title={data?.title}
           spantitle={data?.titlebold}
           titlecolor={"#000"}
-          spantitlecolor={"#2563eb"}
+          spantitlecolor={"#04A7DE"}
         />
 
-        <div className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-center justify-content-center h-auto gap-4`}>
-        {
-            data?.points?.map((item)=>(
-                <div className={`${styles.itemContent} d-flex justify-content-start align-items-start gap-3`}>
-                    <div className="mt-1">
-                    <DynamicIcon name="circle-check-big" size={24} color="#2563eb" />
-                    </div>
-                    <p>{item}</p>
-                </div> 
-            ))
-        }
-      </div>
+        <div
+          className={`${styles.itemsContainer} my-md-5 my-4 d-flex justify-content-center justify-content-center h-auto gap-4`}
+        >
+          {data?.points?.map((item) => (
+            <div
+              className={`${styles.itemContent} d-flex justify-content-start align-items-start gap-3`}
+            >
+              <div className="mt-1">
+                <DynamicIcon
+                  name="circle-check-big"
+                  size={24}
+                  color="#CF5B00"
+                />
               </div>
+              <p>{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </section>
   );
 };

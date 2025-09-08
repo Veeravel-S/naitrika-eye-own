@@ -11,7 +11,7 @@ const Affecting = ({ affect }) => {
           istitle2={true}
           spantitle={affect?.titlebold}
           titlecolor={"#000"}
-          spantitlecolor={"#2563eb"}
+          spantitlecolor={"#04A7DE"}
         />
 
         <div className="visiontype my-md-5 my-4 d-flex justify-content-xxl-between align-items-stretch justify-content-center h-auto  gap-4 flex-wrap">
@@ -27,7 +27,7 @@ const Affecting = ({ affect }) => {
         </div>
 
         <div className={`${styles.affectbtn} d-flex justify-content-center`}>
-          <Button name={affect?.btn} iconcolor={"#fff"} bgcolor={"#16a34a"} />
+          <Button name={affect?.btn} iconcolor={"#fff"} bgcolor={"#CF5B00"} />
         </div>
       </div>
     </section>

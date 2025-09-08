@@ -9,13 +9,15 @@
   justify-content: center;
   align-items: center;
   height: 100%;
-    max-width: 1400px;
-    margin:0 auto;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 80px 10px 80px;
 }
+
 .bannerContainer {
   width: 100%;
 }
+
 .bannerTag {
   font-weight: 500;
   font-size: 0.9rem;
@@ -71,11 +73,11 @@
 }
 
 .span1 {
-  color: rgb(37 99 235);
+  color: #CF5B00;
 }
 
 .span2 {
-  color: rgb(8 145 178);
+  color: #04A7DE;
 }
 
 .description {
@@ -118,10 +120,11 @@
   border-radius: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  border: 2px solid rgb(37 99 235);
-  color: rgb(37 99 235);
+  border: 2px solid #CF5B00;
+  color: #CF5B00;
   background-color: transparent;
 }
+
 .button3 {
   font-weight: 600;
   font-size: 1.125rem;
@@ -132,10 +135,11 @@
   border-radius: 0.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-border: 2px solid rgb(22 163 74);
+  border: 2px solid rgb(22 163 74);
   color: rgb(22 163 74);
   background-color: transparent;
 }
+
 .buttonGroup button {
   display: flex;
   gap: 10px;
@@ -145,17 +149,20 @@ border: 2px solid rgb(22 163 74);
 
 .button2:hover {
   color: white;
-  background-color: rgb(37 99 235);
+  background-color: #CF5B00;
 }
+
 .button3:hover {
   color: white;
   background-color: rgb(22 163 74);
 }
-.note{
+
+.note {
   font-size: .75rem;
   line-height: 1rem;
-  color: rgb(107 114 128 );
+  color: rgb(107 114 128);
 }
+
 .bannerDetails {
   display: flex;
   gap: 10px;
@@ -184,15 +191,18 @@ border: 2px solid rgb(22 163 74);
 }
 
 .detailItem:nth-of-type(1) h5 {
-  color: rgb(37, 99, 235);
+  color: #CF5B00;
+
 }
 
+
 .detailItem:nth-of-type(2) h5 {
-  color: rgb(8, 145, 178);
+  color: #04A7DE
 }
 
 .detailItem:nth-of-type(3) h5 {
-  color: rgb(22, 163, 74);
+  color: rgb(37, 99, 235);
+
 }
 
 .doctorCard {
@@ -255,16 +265,20 @@ border: 2px solid rgb(22 163 74);
     min-height: 830px;
     padding: 0 30px;
   }
+
   .title {
     font-size: 3.25rem;
     width: 100%;
   }
+
   .container {
     gap: 30px;
   }
+
   .description {
     width: 100%;
   }
+
   .bannerImage img {
     height: 550px;
     width: 100%;
@@ -276,20 +290,25 @@ border: 2px solid rgb(22 163 74);
     min-height: 800px;
     padding: 0 40px;
   }
+
   .title {
     font-size: 3rem;
     width: 100%;
   }
+
   .container {
     gap: 30px;
   }
+
   .description {
     font-size: 1.35rem;
     width: 100%;
   }
+
   .bannerImage {
     width: 48%;
   }
+
   .bannerImage img {
     height: 520px;
     width: 100%;
@@ -299,6 +318,7 @@ border: 2px solid rgb(22 163 74);
     flex-wrap: wrap;
     width: 90%;
   }
+
   .buttonGroup button {
     width: 100%;
   }
@@ -376,7 +396,7 @@ border: 2px solid rgb(22 163 74);
   .container {
     width: 100%;
     flex-direction: column;
-    padding: 70px 2px ;
+    padding: 70px 2px;
     justify-content: end;
   }
 
@@ -505,6 +525,7 @@ border: 2px solid rgb(22 163 74);
     width: 100%;
     margin-bottom: 10px;
   }
+
   .buttonGroup {
     width: 100%;
   }

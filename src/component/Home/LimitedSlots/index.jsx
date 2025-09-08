@@ -54,7 +54,7 @@ const LimitedSlots = ({ limitedSlotsData }) => {
               icon={"arrow-right"}
               name={limitedSlotsData?.button?.text}
               isbtn2={true}
-              bgcolor={"#ea580c"}
+              bgcolor={"#CF5B00"}
             ></Button>
             <p>
               <span>

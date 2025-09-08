@@ -74,7 +74,7 @@ a {
 .accordion-button:not(.collapsed) {
   background-color: #fff !important;
   box-shadow: none !important;
-  color: #000 !important;
+  color: #CF5B00 !important;
 }
 
 .accordion-button:focus {

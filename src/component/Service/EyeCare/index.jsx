@@ -9,7 +9,7 @@ const EyeCare = ({ data }) => {
         <section className={`${styles.mainContainer} container-fluid`}>
             <div className={`${styles.container} grid max-w-5xl mx-auto grid md:grid-col-2 gap-4 gap-md-2 gap-lg-5`}>
                 <div className={styles.cardContainer}>
-                    <h3 className="fs-3 fw-bold" style={{ color: "#22d3ee" }}
+                    <h3 className="fs-3 fw-bold" style={{ color: "#04A7DE" }}
                     >{data?.title}</h3>
                     <div className={styles.cardDetails}>
                         {data?.location?.map((item, index) => (
@@ -34,7 +34,7 @@ const EyeCare = ({ data }) => {
                         />
                         <Button
                             name={data?.button2}
-                            bgcolor="#16a34a"
+                            bgcolor="#CF5B00"
                              icon={data?.button2icon}
                             isbtn1={true}
                         />
