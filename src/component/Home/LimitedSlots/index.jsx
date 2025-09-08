@@ -5,7 +5,6 @@ import {
   Zap,
 } from "lucide-react";
 import styles from "./styles.module.css";
-import Badges from "@/Common/Badge";
 import Button from "@/Common/Button";
 import BadgeIcon from "@/common/BadgeIcon";
 import { DynamicIcon } from "lucide-react/dynamic";

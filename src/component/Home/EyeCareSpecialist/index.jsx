@@ -1,7 +1,6 @@
-import { Award, Badge, Calendar, Check, GraduationCap, GraduationCapIcon, Heart, Phone, Star, Users } from "lucide-react";
 import styles from "./styles.module.css"
-import Badges from "@/Common/Badge";
 import BadgeIcon from "@/common/BadgeIcon";
+import Badges from "@/common/Badge";
 
 const EyeCareSpecialist = ({ specialistData }) => {
     return (

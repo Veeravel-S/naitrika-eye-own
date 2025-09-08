@@ -1,6 +1,6 @@
 import { Calendar, Phone, Star } from "lucide-react";
 import styles from "./styles.module.css";
-import Button from "@/Common/Button";
+import Button from "@/common/Button";
 
 const Banner = ({ bannerData }) => {
   return (
