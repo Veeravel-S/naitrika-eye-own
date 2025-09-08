@@ -1,6 +1,6 @@
 import Title from "@/common/Title";
 import styles from "./styles.module.css";
-import Button from "@/Common/Button";
+import Button from "@/common/Button";
 
 const BestDeserveService = ({data}) => {
   return (

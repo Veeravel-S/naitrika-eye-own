@@ -16,7 +16,7 @@ import {
   Zap,
 } from "lucide-react";
 import styles from "./styles.module.css";
-import Button from "@/Common/Button";
+import Button from "@/common/Button";
 import Title from "@/common/Title";
 
 const VisitEyeCare = ({ eyeCareData }) => {

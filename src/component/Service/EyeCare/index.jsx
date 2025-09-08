@@ -1,5 +1,5 @@
 import styles from "./styles.module.css";
-import Button from "@/Common/Button";
+import Button from "@/common/Button";
 import Title from "@/common/Title";
 import { DynamicIcon } from "lucide-react/dynamic";
 

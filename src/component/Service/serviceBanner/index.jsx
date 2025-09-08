@@ -1,6 +1,6 @@
 import { Calendar, MessageCircle, Phone, Star } from "lucide-react";
 import styles from "./styles.module.css";
-import Button from "@/Common/Button";
+import Button from "@/common/Button";
 
 const ServiceBanner = ({ data }) => {
     return (

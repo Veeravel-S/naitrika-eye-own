@@ -4,7 +4,7 @@ import {
   Shield,
 } from "lucide-react";
 import styles from "./styles.module.css";
-import Button from "@/Common/Button";
+import Button from "@/common/Button";
 import { DynamicIcon } from "lucide-react/dynamic";
 
 const BestDeserve = ({ bestDeserveData }) => {
