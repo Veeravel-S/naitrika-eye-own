@@ -59,7 +59,7 @@ a {
   height: fit-content;
 }
 
-.slick-arrow{
+.slick-arrow {
   display: none !important;
 }
 
@@ -70,3 +70,13 @@ a {
 }
 
 
+
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  box-shadow: none !important;
+  color: #000 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none !important;
+}

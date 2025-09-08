@@ -8,16 +8,14 @@ const Consultation = ({ consultationData }) => {
     <section className={styles.consultsec}>
       <div className="container">
         <Title
-          title={"From Consultation to Clear Vision —"}
-          spantitle={" In 3 Simple Steps"}
+          title={consultationData?.title}
+          spantitle={consultationData?.titlebold}
           spantitlecolor={"#2563eb"}
-          subtitle={
-            "Our streamlined process ensures you receive the best care with minimal hassle"
-          }
+          subtitle={consultationData?.subtitle}
         />
 
         <div className="my-md-5 my-4 d-flex  justify-content-center  gap-4 flex-wrap">
-          {consultationData?.map((data, i) => (
+          {consultationData?.consultCard?.map((data, i) => (
             <div
               className={`${styles.consultcard} commonshadow my-3 mx-4 mx-md-0`}
             >
@@ -40,9 +38,12 @@ const Consultation = ({ consultationData }) => {
         </div>
 
         <div className={`text-center commonshadow ${styles.stories}`}>
-          <h4>Ready to Start Your Journey to Better Vision?</h4>
-          <p>Take the first step towards clearer sight with our expert care</p>
-          <Button name={"Begin Your Treatment Today"} bgcolor={"#2563eb"} />
+          <h4>{consultationData?.bettervision?.title}</h4>
+          <p>{consultationData?.bettervision?.subtitle}</p>
+          <Button
+            name={consultationData?.bettervision?.btn}
+            bgcolor={"#2563eb"}
+          />
         </div>
       </div>
     </section>

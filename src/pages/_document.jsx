@@ -6,13 +6,8 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
           rel="stylesheet"
-          href="/plugins/bootstrap/css/bootstrap.min.css"
-        />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-          onLoad="this.media='all'"
         />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -40,10 +35,7 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
-      <Script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        strategy="lazyOnload"
-      />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
       <script src="/plugins/slick-carousel/slick/slick.min.js"></script>
     </Html>
   );

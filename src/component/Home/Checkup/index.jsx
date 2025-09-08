@@ -21,7 +21,9 @@ const Checkup = ({ checkupData }) => {
           <div className="row">
             {checkupData?.map((data, i) => (
               <div className="col-lg-4 col-md-6" key={i}>
-                <div className={`${styles.checkupcard} commonshadow my-md-3 my-4 mx-4 mx-md-0`}>
+                <div
+                  className={`${styles.checkupcard} commonshadow my-md-3 my-4 mx-4 mx-md-0`}
+                >
                   <BadgeIcon icon={data.icons} />
                   <h4>{data?.name}</h4>
                   <p>{data?.content}</p>
@@ -31,7 +33,11 @@ const Checkup = ({ checkupData }) => {
                       <h6>{point}</h6>
                     </div>
                   ))}
-                  <Button name={"Learn More"} bgcolor={"rgb(239 246 255)"} />
+                  <Button
+                    name={"Learn More"}
+                    bgcolor={"rgb(239 246 255)"}
+                    href={data?.link}
+                  />
                 </div>
               </div>
             ))}

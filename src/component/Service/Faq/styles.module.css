@@ -1,0 +1,63 @@
+.faqsec {
+    padding: 80px 0px;
+    background-color: #f9fafb;
+
+}
+
+.accordinitem {
+    background-color: none !important;
+    margin: 20px;
+
+}
+
+.question button {
+    font-weight: 700;
+}
+
+.questionc {
+    border-radius: 0px !important;
+}
+
+
+
+.accordinmain {
+    width: 900px;
+}
+
+.question {
+    padding: 8px 10px;
+}
+
+
+@media (width < 1200px) {
+
+    .accordinmain {
+        width: 800px;
+    }
+
+    .accordingans {
+        font-size: 15px;
+    }
+
+}
+
+@media (width < 992px) {
+
+    .accordinmain {
+        width: 100%;
+    }
+
+}
+
+@media (width < 768px) {
+
+    .faqsec {
+        padding: 60px 0px;
+    }
+
+    .question button {
+        font-size: 15px;
+        padding:  20px 10px;
+    }
+
+}

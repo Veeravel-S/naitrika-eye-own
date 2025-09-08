@@ -1,0 +1,62 @@
+.candidatesurgerysec {
+    padding: 80px 0px;
+    background-color: #f9fafb;
+}
+
+.pointcard {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.listcard {
+    width: 900px;
+}
+
+.pointnotes {
+    background-color: #dbeafe;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.pointnotes p {
+    color: #1e60ce;
+}
+
+@media (width < 1200px) {
+
+    .listcard {
+        width: 800px;
+    }
+
+
+    .pointcard p , .pointnotes p{
+        font-size: 15px;
+    }
+}
+
+
+@media (width < 992px) {
+
+    .listcard {
+        width: 100%;
+    }
+
+    
+
+}
+
+@media (width < 768px) {
+
+    .candidatesurgerysec{
+        padding: 60px 0px;
+    }
+
+    .pointcard p{
+        width: 270px;
+    }
+
+    
+    
+}

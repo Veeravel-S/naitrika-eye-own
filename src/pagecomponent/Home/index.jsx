@@ -18,7 +18,6 @@ import { VisionData } from "@/constant/Home/vision";
 import { eyeCareData } from "@/constant/Home/visitEyeCare";
 
 const HomePageComponent = () => {
-  console.log(limitedSlotsData)
   return (
     <>
       <Banner bannerData={bannerData} />

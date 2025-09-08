@@ -8,9 +8,7 @@ const Vision = ({ visionData }) => {
     <section className={styles.visionsec}>
       <div className="container-fluid">
         <Title
-          title={
-            visionData?.title
-          }
+          title={visionData?.title}
           istitle2={true}
           spantitle={visionData?.titlebold}
           titlecolor={"#000"}
@@ -23,9 +21,14 @@ const Vision = ({ visionData }) => {
               className={`text-center ${styles.visioncard} commonshadow my-3 mx-3 mx-md-0`}
               key={i}
             >
-              <div className="d-flex justify-content-center">
-                <BadgeIcon icon={data?.icons} />
-              </div>
+              {data?.icons ? (
+                <div className="d-flex justify-content-center">
+                  <BadgeIcon icon={data?.icons} />
+                </div>
+              ) : (
+                ""
+              )}
+
               <h4>{data?.title}</h4>
               <p>{data?.content}</p>
             </div>
@@ -35,12 +38,12 @@ const Vision = ({ visionData }) => {
         <div className="d-flex justify-content-center">
           <div className={`${styles.advancecare} commonshadow`}>
             <h4>
-              Get the Same Advanced Care in Berhampur —{" "}
-              <span>Without the Travel</span>
+              {visionData?.advancecare?.title}
+              <span>{visionData?.advancecare?.titlebold}</span>
             </h4>
             <Button
-              name={"Schedule Your Consultation"}
-              icon={"arrow-right"}
+              name={visionData?.advancecare?.btn}
+              icon={visionData?.advancecare?.btnicon}
               iconcolor={"#fff"}
               bgcolor={"#16a34a"}
               isbtn2={true}

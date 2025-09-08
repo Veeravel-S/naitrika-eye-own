@@ -1,0 +1,59 @@
+.estimatesec {
+    padding: 80px 0px;
+}
+
+.estimatecard {
+    width: 900px;
+    padding: 40px 25px;
+    border-radius: 10px;
+    background-color: #f0fdf4;
+}
+
+.estimatecard p {
+    color: #374151;
+    margin: 20px 0px;
+}
+
+.estimatecard span {
+    color: #374151;
+    font-weight: 400;
+}
+
+.estimatecard h6 {
+    color: #374151;
+    font-weight: 600;
+}
+
+@media (width < 1200px) {
+
+    .estimatecard{
+        width: 800px;
+    }
+
+    .estimatecard h6 , .estimatecard h5{
+        font-size: 16px;
+    }
+
+    .estimatecard p{
+        font-size: 15px;
+    }
+    
+}
+
+
+@media (width < 992px) {
+
+    .estimatecard{
+        width: 100%;
+    }
+    
+}
+
+
+@media (width < 76px) {
+
+    .estimatesec{
+        padding: 60px 0px;
+    }
+    
+}

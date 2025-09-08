@@ -10,6 +10,7 @@ export const CheckupData = [
       "Same-day discharge",
       "Premium IOLs available",
     ],
+    link : "/service"
   },
   {
     id: 2,
